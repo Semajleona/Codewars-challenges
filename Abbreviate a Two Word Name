@@ -1,0 +1,21 @@
+Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+The output should be two capital letters with a dot separating them.
+
+It should look like this:
+
+Sam Harris => S.H
+
+patrick feeney => P.F
+
+MY SOLUTION
+
+function abbrevName(name){
+let myName = name.split(' ') // this seperates my name into two strings
+let firstInitial =  myName[0][0] /* first 0 is the first string in the index, so 0 
+= semaj then the second 0 is the first letter in that string*/
+let lastInitial =  myName[1][0]/* first 0 is the string in the index, so 0 
+= johnson then the second 0 is the first letter in that string*/
+return firstInitial.toUpperCase() +'.'+ lastInitial.toUpperCase()
+
+}
