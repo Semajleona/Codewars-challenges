@@ -1,0 +1,12 @@
+You are an up and coming commentator in the brutal world of pro wrestling. However, you suck at telling who reversed the reversal.
+
+You will be provided with a string in the format of : "X hit a reversal to Y hit a reversal to X...... hit a reversal to (X/Y)"
+
+MY SOLUTION
+
+
+function whowon(s) {
+  let wrestlers = s.split(' hit a reversal to ')
+  return wrestlers[wrestlers.length - 2] // second to last
+  // study solution 
+}
